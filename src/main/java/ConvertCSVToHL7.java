@@ -56,7 +56,7 @@ public class ConvertCSVToHL7 {
 
                 List<NextOfKin> nextOfKins = new ArrayList<>();
 
-                if (info[12] != "") {
+                if (info.length > 12) {
                     NextOfKin nok1 = new NextOfKin();
                     nok1.setFirstName(info[12]);
                     nok1.setLastName(info[13]);
@@ -64,7 +64,7 @@ public class ConvertCSVToHL7 {
                     nextOfKins.add(nok1);
                 }
 
-                if (info[15] != "") {
+                if (info.length > 15) {
                     NextOfKin nok2 = new NextOfKin();
                     nok2.setFirstName(info[15]);
                     nok2.setLastName(info[16]);
